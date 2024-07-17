@@ -1,0 +1,65 @@
+.fondo {
+    background-color: #262626;
+ 
+    height: auto;
+    display: flex;
+    color: blueviolet;
+    justify-content: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+}
+
+.container form {
+    background-color: #262626;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25);
+    padding: 8px 100px;
+    height: 1192px; 
+    margin-bottom: 30px;
+    bottom: 89px;
+}
+
+.container h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+.container h3 {
+    font-family: Source Sans Pro;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    padding: 24px;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+}
+
+.container h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espacio entre columnas */
+}
+
+.formulario > * {
+    flex: 1 1 calc(50% - 16px); /* Toma el 50% del ancho menos el espacio de gap */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    min-width: 250px; /* Ancho mínimo para los elementos */
+    max-width: calc(50% - 16px); /* Ancho máximo para los elementos */
+}
+
+.fondoFormulario{
+    display: flex;
+    flex-direction: column;
+}

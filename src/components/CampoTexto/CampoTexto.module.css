@@ -1,0 +1,35 @@
+.campoText {
+    margin: 24px 0;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    width: 40%;
+}
+
+.campoText label {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #A5A5A5;
+    display: block;
+}
+
+.campoText input {
+    width: 90%;
+    height: 30px;
+    gap: 0;
+    /* opacity: 1;  */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 3px solid red;
+    outline-color: yellowgreen;
+    position: relative;
+    top: 16px;
+    
+    box-sizing: border-box; 
+}

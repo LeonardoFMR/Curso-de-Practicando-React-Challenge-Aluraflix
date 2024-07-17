@@ -1,0 +1,47 @@
+.categoria{
+
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 37.5px;
+    text-align: center;
+    color: aqua;
+    background: transparent;
+    
+    
+
+}
+
+.equipo {
+    width: 100%;
+    background-color: #D9F7E9;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32px;
+    background-color: transparent;  
+   
+}
+
+
+.categoria h3 {
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 37.5px;
+    text-align: left;
+    color: aqua;
+    /* background-color: blue; */
+    width: 20%;
+    margin-left: 30px;
+    
+}
+
+.container{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+
+
