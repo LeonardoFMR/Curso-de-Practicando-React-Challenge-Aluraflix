@@ -4,7 +4,7 @@ import logo from "./logo.png"
 
 function Pie() {
     return (
-        <footer className={styles.cabecera}>
+        <footer className={styles.footer}>
 
             <Link to="/">
                 <section className={styles.logoContainer}>

@@ -1,16 +1,17 @@
-.cabecera{
+.footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1.1em 10em;
     background: #000000;
-
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 .logoContainer{
     margin-top: 14px;
-    margin-bottom: 14px;
-    height: auto;
+    height: 420px;
     display: flex;
     align-items: center;
 }

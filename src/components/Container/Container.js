@@ -1,11 +1,18 @@
-import styles from "./Container.module.css"
 
-function Container({children}){
-    return(
-    <section className={styles.container}>
-    {/* <h2></h2> */}
-    {children}
-    </section>
-    )
-    }
-    export default Container
+
+import styles from "./Container.module.css";
+
+function Container({ children }) {
+    return (
+        <>
+
+            <div className={styles.container}>
+                {children}
+            </div>
+            
+        </>
+        
+    );
+}
+
+export default Container;

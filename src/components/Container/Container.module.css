@@ -1,11 +1,22 @@
-.container{
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 2em 2em;
     text-align: center;
-    display: flex;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
-    gap: .5em;
+    
+}
+
+
+/* .container {
+   
+    display: flex;
+    
+    
     margin: 0;
     background-color: #262626;
-   
-}
+    background-color: yellow;
+    position: relative;
+
+} */
