@@ -1,5 +1,6 @@
 
 import styles from "./CampoTexto.module.css"
+import classNames from "classnames"; 
 
 function CampoTexto(props) {
 
@@ -11,7 +12,7 @@ function CampoTexto(props) {
     const placeholderModificado = `   ${props.placeholder}`
 
     return (
-        <div className={styles.campoText}>
+        <div className={classNames(styles.campoText, props.className)}>
             <label>{props.titulo}</label>
             <input 
             placeholder={placeholderModificado} 

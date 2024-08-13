@@ -6,6 +6,8 @@ import CajaDescriptiva from "components/CajaDescriptiva/CajaDescriptiva"
 import ListaOpciones from "components/ListaOpciones/ListaOpciones"
 import { useState } from "react"
 import { useEffect, useRef } from "react";
+import crossImage from "./cross.png";
+
 
 function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNuevo }) {
 
@@ -22,7 +24,7 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
     const [imagen, actualizarImagen] = useState("")
     const [video, actualizarVideo] = useState("")
     const [descripcion, actualizarDescripcion] = useState("")
-    
+
     const dialogRef = useRef(null);
 
 
@@ -38,17 +40,17 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
     }, [visible]);
 
     const manejarEnvio = (e) => {
-    e.preventDefault()
-    let datosAEnviar = {
-        titulo: titulo,
-        categoria: categoria,
-        imagen: imagen,
-        video: video,
-        descripcion: descripcion
+        e.preventDefault()
+        let datosAEnviar = {
+            titulo: titulo,
+            categoria: categoria,
+            imagen: imagen,
+            video: video,
+            descripcion: descripcion
+        }
+        registrarNuevo(datosAEnviar);
+        onCrear(datosAEnviar);
     }
-    registrarNuevo(datosAEnviar); 
-    onCrear(datosAEnviar); 
-}
 
 
 
@@ -59,28 +61,36 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                 <section className={styles.fondo}>
                     <section className={styles.container}>
 
-                        <button type="button" onClick={onClose}>Cerrar</button>
+                        <button type="button" onClick={onClose} className={styles.closeButton}>
+                            <img src={crossImage} alt="Cerrar" />
+                        </button>
 
-                        <h2>NUEVO VIDEO</h2>
-                        <h4>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</h4>
-                        <h3>Crear Tarjeta</h3>
+
+                        <h2 className={styles.titulo_card}>EDITAR CARD:</h2>
+                       
+                        
                         <form className={styles.formulario} onSubmit={manejarEnvio}>
 
                             <CampoTexto
+                                className={styles.elementoModal}
                                 titulo="Título"
                                 placeholder="ingrese el título"
                                 required
                                 valor={titulo}
                                 actualizarValor={actualizarTitulo}
                             />
+                             
                             <ListaOpciones
+                                className={styles.lista}
                                 required
                                 valor={categoria}
                                 actualizarValor={actualizarCategoria}
                                 opcionesDeCategoria={opcionesDeCategoria}
                             />
+                            
 
                             <CampoTexto
+                                className={styles.elementoModal}
                                 titulo="Imagen"
                                 placeholder="el enlace es obligatorio"
                                 required
@@ -89,6 +99,7 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                             />
 
                             <CampoTexto
+                                className={styles.elementoModal}
                                 titulo="Video"
                                 placeholder="ingrese el enlace del video"
                                 required
@@ -98,6 +109,7 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
 
                             <div className={styles.fondoFormulario}>
                                 <CajaDescriptiva
+                                    className={styles.elementoModal}
                                     titulo="Descripción"
                                     placeholder="¿De qué se trata este vídeo?"
                                     required
