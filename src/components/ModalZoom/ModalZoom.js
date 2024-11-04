@@ -1,4 +1,3 @@
-
 import CampoTexto from "components/CampoTexto/CampoTexto"
 import styles from "./ModalZoom.module.css"
 import Botones from "components/Botones/Botones"
@@ -67,8 +66,8 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
 
 
                         <h2 className={styles.titulo_card}>EDITAR CARD:</h2>
-                       
-                        
+
+
                         <form className={styles.formulario} onSubmit={manejarEnvio}>
 
                             <CampoTexto
@@ -79,15 +78,15 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                                 valor={titulo}
                                 actualizarValor={actualizarTitulo}
                             />
-                             
+                            <div className={styles.fondoFormulario}>
                             <ListaOpciones
-                                className={styles.lista}
+                                className={styles.elementoModal}
                                 required
                                 valor={categoria}
                                 actualizarValor={actualizarCategoria}
                                 opcionesDeCategoria={opcionesDeCategoria}
                             />
-                            
+                            </div>
 
                             <CampoTexto
                                 className={styles.elementoModal}
@@ -116,10 +115,11 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                                     valor={descripcion}
                                     actualizarValor={actualizarDescripcion}
                                 />
-                                <Botones onCrear={manejarEnvio} onLimpiar={resetForm} />
-
-
                             </div>
+                            <Botones className={styles.botones} onCrear={manejarEnvio} onLimpiar={resetForm} />
+
+
+
                         </form>
 
 
