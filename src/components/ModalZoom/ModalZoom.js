@@ -115,8 +115,9 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                                     valor={descripcion}
                                     actualizarValor={actualizarDescripcion}
                                 />
+                                                            <Botones className={styles.fondoBotones} onCrear={manejarEnvio} onLimpiar={resetForm} />
+
                             </div>
-                            <Botones className={styles.botones} onCrear={manejarEnvio} onLimpiar={resetForm} />
 
 
 
@@ -124,6 +125,7 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
 
 
                     </section>
+
                 </section>
             </dialog>
         </>
