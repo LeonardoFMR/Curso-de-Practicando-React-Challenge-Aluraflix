@@ -22,7 +22,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
             video: video,
             descripcion: descripcion
         };
-        registrarNuevo(datosAEnviar); 
+        registrarNuevo(datosAEnviar);
         actualizarTitulo("");
         actualizarCategoria("");
         actualizarImagen("");
@@ -41,6 +41,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                     <h3>Crear Tarjeta</h3>
                     <form className={styles.formulario} onSubmit={manejarEnvio}>
                         <CampoTexto
+                            className={styles.elementoFormulario}
                             titulo="Título"
                             placeholder="ingrese el título"
                             required
@@ -48,13 +49,15 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             actualizarValor={actualizarTitulo}
                         />
                         <ListaOpciones
-                                required
-                                valor={categoria}
-                                actualizarValor={actualizarCategoria}
-                                opcionesDeCategoria={opcionesDeCategoria}
-                            />
+                            className={styles.elementoFormulario}
+                            required
+                            valor={categoria}
+                            actualizarValor={actualizarCategoria}
+                            opcionesDeCategoria={opcionesDeCategoria}
+                        />
 
                         <CampoTexto
+                            className={styles.elementoFormulario}
                             titulo="Imagen"
                             placeholder="el enlace es obligatorio"
                             required
@@ -63,6 +66,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                         />
 
                         <CampoTexto
+                            className={styles.elementoFormulario}
                             titulo="Video"
                             placeholder="ingrese el enlace del video"
                             required
@@ -72,6 +76,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
 
                         <div className={styles.fondoFormulario}>
                             <CajaDescriptiva
+                                className={styles.elementoFormulario}
                                 titulo="Descripción"
                                 placeholder="¿De qué se trata este vídeo?"
                                 required
