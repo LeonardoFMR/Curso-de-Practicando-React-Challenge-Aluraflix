@@ -74,17 +74,18 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             actualizarValor={actualizarVideo}
                         />
 
-                        <div className={styles.fondoFormulario}>
+                        <div className={styles.elementoFormulario}>
                             <CajaDescriptiva
-                                className={styles.elementoFormulario}
+                                
                                 titulo="Descripción"
                                 placeholder="¿De qué se trata este vídeo?"
                                 required
                                 valor={descripcion}
                                 actualizarValor={actualizarDescripcion}
                             />
-                            <Botones />
+                            
                         </div>
+                        <Botones />
                     </form>
 
 
