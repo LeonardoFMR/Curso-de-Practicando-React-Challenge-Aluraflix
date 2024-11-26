@@ -41,7 +41,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                     <h3>Crear Tarjeta</h3>
                     <form className={styles.formulario} onSubmit={manejarEnvio}>
                         <CampoTexto
-                            className={styles.elementoFormulario}
+                            className={`${styles.elementoFormulario} ${styles.titulo}`}
                             titulo="Título"
                             placeholder="ingrese el título"
                             required
@@ -49,7 +49,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             actualizarValor={actualizarTitulo}
                         />
                         <ListaOpciones
-                            className={styles.elementoFormulario}
+                            className={`${styles.elementoFormulario} ${styles.categoria}`}
                             required
                             valor={categoria}
                             actualizarValor={actualizarCategoria}
@@ -57,7 +57,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                         />
 
                         <CampoTexto
-                            className={styles.elementoFormulario}
+                            className={`${styles.elementoFormulario} ${styles.imagen}`}
                             titulo="Imagen"
                             placeholder="el enlace es obligatorio"
                             required
@@ -66,7 +66,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                         />
 
                         <CampoTexto
-                            className={styles.elementoFormulario}
+                            className={`${styles.elementoFormulario} ${styles.video}`}
                             titulo="Video"
                             placeholder="ingrese el enlace del video"
                             required
@@ -74,18 +74,18 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             actualizarValor={actualizarVideo}
                         />
 
-                        <div className={styles.elementoFormulario}>
+                        <div className={`${styles.elementoFormulario} ${styles.descripcion}`}>
                             <CajaDescriptiva
-                                
+
                                 titulo="Descripción"
                                 placeholder="¿De qué se trata este vídeo?"
                                 required
                                 valor={descripcion}
                                 actualizarValor={actualizarDescripcion}
                             />
-                            
+
                         </div>
-                        <Botones />
+                        <Botones className={`${styles.elementoFormulario} ${styles.botones}`} />
                     </form>
 
 
