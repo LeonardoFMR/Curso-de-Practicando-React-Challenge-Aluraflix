@@ -9,8 +9,7 @@
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    
     height: auto;
     width: 1360px;
 }
@@ -56,16 +55,11 @@
 .formulario > * {
     box-sizing: border-box;
     min-width: 250px;
+
 }
 
-.fondoFormulario{
-    display: flex;
-    flex-direction: column;
-}
 
 .elementoFormulario {
-    display: flex;
-    flex-direction: column;
     margin: 19px;
     gap: 0px;
     border-radius: 10px 10px 10px 10px;
@@ -86,7 +80,7 @@
     border-radius: 10px 10px 10px 10px;
     height:62px;
     /* ES LA ALTURA DE Título Y Video */
-    
+
     
 }
 
@@ -109,9 +103,11 @@ select {
 }
 
   .elementoFormulario Label{
-    display: flex;
-    flex-direction: column;
-   
+    display: block;
+       } 
+
+.elementoFormulario select{
+    display: block;   
 } 
 
 /* Título y categoría en la primera fila */

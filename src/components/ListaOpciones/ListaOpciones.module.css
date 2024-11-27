@@ -35,8 +35,13 @@
 
 
 .opciones {
-   display: flex;
-   flex-direction: column;
-   text-align: start;
-   width: 80%;
+    display: block;
+    text-align: left;
+    width: 80%;
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+
 }
