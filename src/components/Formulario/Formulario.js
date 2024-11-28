@@ -48,13 +48,16 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             valor={titulo}
                             actualizarValor={actualizarTitulo}
                         />
-                        <ListaOpciones
-                            className={`${styles.elementoFormulario} ${styles.categoria}`}
-                            required
-                            valor={categoria}
-                            actualizarValor={actualizarCategoria}
-                            opcionesDeCategoria={opcionesDeCategoria}
-                        />
+
+                        <div className={styles.elementoCategoria}>
+                            <ListaOpciones
+                                className={`${styles.elementoFormulario} ${styles.categoria}`}
+                                required
+                                valor={categoria}
+                                actualizarValor={actualizarCategoria}
+                                opcionesDeCategoria={opcionesDeCategoria}
+                            />
+                        </div>
 
                         <CampoTexto
                             className={`${styles.elementoFormulario} ${styles.imagen}`}

@@ -33,7 +33,7 @@
     font-family: Source Sans Pro;
     font-size: 36px;
     font-weight: 600;
-    line-height: 24px;
+    /* line-height: 24px; */
     text-align: left;
     padding: 24px;
     border-top: 2px solid #262626;
@@ -70,7 +70,7 @@
     font-family: Source Sans Pro;
     font-size: 20px;
     font-weight: 600;
-    line-height: 24px;
+    /* line-height: 24px; */
     text-align: left;
 }
 
@@ -78,7 +78,7 @@
     border: 3px solid #6BD1FF;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    height:62px;
+    /* height:62px; */
     /* ES LA ALTURA DE Título Y Video */
 
     
@@ -88,7 +88,7 @@
     border: 3px solid #6BD1FF;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    height:60px;
+    /* height:60px; */
 }
 
 
@@ -99,6 +99,7 @@ select {
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     color: white;
+    
     
 }
 
@@ -128,14 +129,13 @@ select {
 .formulario .imagen select{
     grid-column: 1; /* Primera columna */
     grid-row: 2; /* Segunda fila */
-    height:62px;
     width: 573px;
 }
 
 .formulario .video select{
     grid-column: 2; /* Segunda columna */
     grid-row: 2; /* Segunda fila */
-    height:62px;
+    
     width: 573px;
 }
 
@@ -149,4 +149,15 @@ select {
 .formulario .botones {
     grid-column: 1 / span 2; /* Ocupa ambas columnas */
     grid-row: 4; /* Cuarta fila */
+}
+
+
+.elementoCategoria{
+    
+
+}
+
+.elementoCategoria select{
+    
+    background-color: blue;
 }
