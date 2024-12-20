@@ -40,6 +40,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                     <h4>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</h4>
                     <h3>Crear Tarjeta</h3>
                     <form className={styles.formulario} onSubmit={manejarEnvio}>
+                    
                         <CampoTexto
                             className={`${styles.elementoFormulario} ${styles.titulo}`}
                             titulo="Título"
@@ -49,9 +50,9 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             actualizarValor={actualizarTitulo}
                         />
 
-                        <div className={styles.elementoCategoria}>
+                        <div className={`${styles.elementoFormulario} ${styles.categoria}`}>
                             <ListaOpciones
-                                className={`${styles.elementoFormulario} ${styles.categoria}`}
+
                                 required
                                 valor={categoria}
                                 actualizarValor={actualizarCategoria}
@@ -88,9 +89,13 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                             />
 
                         </div>
-                        <Botones className={`${styles.elementoFormulario} ${styles.botones}`} />
-                    </form>
 
+                        <div className={`${styles.elementoFormulario} ${styles.botones}`}>
+                        <Botones className={`${styles.elementoFormulario} ${styles.botones}`} />
+                        </div>
+                    
+
+                    </form>
 
                 </section>
             </section>

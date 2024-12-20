@@ -1,6 +1,5 @@
 .fondo {
     background-color: #262626;
- 
     height: auto;
     display: flex;
     color: blueviolet;
@@ -9,7 +8,6 @@
 }
 
 .container {
-    
     height: auto;
     width: 1360px;
 }
@@ -18,7 +16,7 @@
     background-color: #262626;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 25);
     padding: 8px 100px;
-    height: 1192px; 
+    height: 1192px;
     margin-bottom: 30px;
     bottom: 89px;
 }
@@ -44,120 +42,58 @@
     font-size: 20px;
     font-weight: 400;
 }
+
 .formulario {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-    grid-template-rows: auto; /* Altura dinámica para las filas */
-    gap: 16px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+
 }
 
 
-.formulario > * {
+.formulario>* {
     box-sizing: border-box;
     min-width: 250px;
-
 }
 
-
+/*Elemento mas la caja*/
 .elementoFormulario {
-    margin: 19px;
-    gap: 0px;
-    border-radius: 10px 10px 10px 10px;
-    border: 3px 0px 0px 0px;
-    opacity: 0px;
-    text-align: start;
-    opacity: 0px;
-    font-family: Source Sans Pro;
-    font-size: 20px;
-    font-weight: 600;
-    /* line-height: 24px; */
-    text-align: left;
+    background-color: green;
 }
 
+/*Cja de abajode los elementos*/
 .elementoFormulario input {
     border: 3px solid #6BD1FF;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    /* height:62px; */
-    /* ES LA ALTURA DE Título Y Video */
-
-    
-}
-
-.elementoFormulario dialog {
-    border: 3px solid #6BD1FF;
-    background: transparent;
-    border-radius: 10px 10px 10px 10px;
-    /* height:60px; */
-}
-
-
-
-select {
-    border: 3px solid #6BD1FF;
-    background: transparent;
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    color: white;
-    
-    
-}
-
-  .elementoFormulario Label{
-    display: block;
-       } 
-
-.elementoFormulario select{
-    display: block;   
-} 
-
-/* Título y categoría en la primera fila */
-.formulario .titulo {
-    grid-column: 1; /* Primera columna */
-    grid-row: 1; /* Primera fila */
-    width: 470px;
-}
-
-.formulario .categoria {
-    grid-column: 2; /* Segunda columna */
-    grid-row: 1; /* Primera fila */
-    width: 573px;
-   
-}
-
-/* Imagen y video en la segunda fila */
-.formulario .imagen select{
-    grid-column: 1; /* Primera columna */
-    grid-row: 2; /* Segunda fila */
-    width: 573px;
-}
-
-.formulario .video select{
-    grid-column: 2; /* Segunda columna */
-    grid-row: 2; /* Segunda fila */
-    
-    width: 573px;
-}
-
-/* Descripción en la tercera fila */
-.formulario .descripcion {
-    grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 3; /* Tercera fila */
-}
-
-/* Botones en la cuarta fila */
-.formulario .botones {
-    grid-column: 1 / span 2; /* Ocupa ambas columnas */
-    grid-row: 4; /* Cuarta fila */
-}
-
-
-.elementoCategoria{
-    
-
-}
-
-.elementoCategoria select{
-    
     background-color: blue;
+    height: 62px;
+}
+
+
+
+/*Cuadro Categoría*/
+select {
+    background-color: gray;
+    width: 573px;
+    height: 62px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+/*Título de los elementos, excepto categoría*/
+.elementoFormulario Label {
+    display: block;
+    background-color: darkred;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.formulario .botones {
+    background-color: greenyellow;
+    grid-row: 4;
+    display: flex;
+    justify-content: left;
+    /* Cuarta fila */
 }

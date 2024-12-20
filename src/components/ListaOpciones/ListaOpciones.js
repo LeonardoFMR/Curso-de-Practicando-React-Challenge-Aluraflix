@@ -28,3 +28,6 @@ function ListaOpciones({ valor, actualizarValor, opcionesDeCategoria, required }
 }
 
 export default ListaOpciones;
+
+
+
