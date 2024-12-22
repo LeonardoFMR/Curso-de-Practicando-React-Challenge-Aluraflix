@@ -59,7 +59,7 @@
 
 /*Elemento mas la caja*/
 .elementoFormulario {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /*Cja de abajode los elementos*/
@@ -67,7 +67,7 @@
     border: 3px solid #6BD1FF;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    background-color: blue;
+    /* background-color: white; */
     height: 62px;
 }
 
@@ -96,4 +96,42 @@ select {
     display: flex;
     justify-content: left;
     /* Cuarta fila */
+}
+
+.formulario .titulo{
+    background-color: aqua;
+}
+
+.formulario .categoria{
+    background-color: yellow;
+}
+
+.formulario .imagen {
+    background-color: red;
+}
+.formulario .video{
+    background-color: orangered;
+}
+.formulario .descripcion{
+    background-color: green;
+}
+
+
+
+.formulario .titulo input{
+    background-color: blue;
+}
+
+.formulario .categoria select{
+    background-color: purple;
+}
+
+.formulario .imagen input{
+    background-color: white;
+}
+.formulario .video input{
+    background-color: green;
+}
+.formulario .descripcion input{
+    background-color: red;
 }

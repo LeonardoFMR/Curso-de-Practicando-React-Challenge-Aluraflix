@@ -91,7 +91,7 @@ function Formulario({ opcionesDeCategoria, registrarNuevo }) {
                         </div>
 
                         <div className={`${styles.elementoFormulario} ${styles.botones}`}>
-                        <Botones className={`${styles.elementoFormulario} ${styles.botones}`} />
+                        <Botones  />
                         </div>
                     
 
