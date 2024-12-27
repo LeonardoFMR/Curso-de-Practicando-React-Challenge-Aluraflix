@@ -2,7 +2,6 @@
     background-color: #262626;
     height: auto;
     display: flex;
-    color: blueviolet;
     justify-content: center;
 
 }
@@ -10,6 +9,7 @@
 .container {
     height: auto;
     width: 1360px;
+    margin-top: 80px;
 }
 
 .container form {
@@ -48,8 +48,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 16px;
-
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    /* color: blueviolet; */
 }
+
 
 
 .formulario>* {
@@ -57,10 +65,7 @@
     min-width: 250px;
 }
 
-/*Elemento mas la caja*/
-.elementoFormulario {
-    /* background-color: yellow; */
-}
+
 
 /*Cja de abajode los elementos*/
 .elementoFormulario input {
@@ -98,40 +103,58 @@ select {
     /* Cuarta fila */
 }
 
-.formulario .titulo{
+.formulario .titulo {
     background-color: aqua;
+    width: 85%;
 }
 
-.formulario .categoria{
+.formulario .categoria {
     background-color: yellow;
+    position: relative;
+    left: -90px;
 }
 
 .formulario .imagen {
     background-color: red;
 }
-.formulario .video{
+
+.formulario .video {
     background-color: orangered;
 }
-.formulario .descripcion{
+
+.formulario .descripcion {
     background-color: green;
 }
 
 
 
-.formulario .titulo input{
+.formulario .titulo input {
     background-color: blue;
+    height: 62px;
+    width: 470px;
+    justify-content: start;
 }
 
-.formulario .categoria select{
+.formulario .categoria select {
     background-color: purple;
+    height: 62px;
+    width: 573px;
 }
 
-.formulario .imagen input{
+.formulario .imagen input {
     background-color: white;
+    height: 62px;
+    width: 573px;
 }
-.formulario .video input{
+
+.formulario .video input {
     background-color: green;
+    height: 62px;
+    width: 573px;
 }
-.formulario .descripcion input{
+
+.formulario .descripcion input {
     background-color: red;
+    height: 220px;
+    width: 573px;
 }
