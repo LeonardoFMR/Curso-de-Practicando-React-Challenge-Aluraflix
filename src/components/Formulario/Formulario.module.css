@@ -1,9 +1,9 @@
+/* --- Estructura general --- */
 .fondo {
     background-color: #262626;
     height: auto;
     display: flex;
     justify-content: center;
-
 }
 
 .container {
@@ -21,17 +21,16 @@
     bottom: 89px;
 }
 
+/* --- Títulos --- */
 .container h2 {
     font-size: 60px;
     font-weight: 900;
 }
 
-
 .container h3 {
     font-family: Source Sans Pro;
     font-size: 36px;
     font-weight: 600;
-    /* line-height: 24px; */
     text-align: left;
     padding: 24px;
     border-top: 2px solid #262626;
@@ -43,6 +42,7 @@
     font-weight: 400;
 }
 
+/* --- Formulario --- */
 .formulario {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,41 +53,28 @@
     font-weight: 600;
     line-height: 24px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    /* color: blueviolet; */
+    color: violet;
 }
-
-
 
 .formulario>* {
     box-sizing: border-box;
     min-width: 250px;
 }
 
-
-
-/*Cja de abajode los elementos*/
+/* --- Elementos del formulario --- */
 .elementoFormulario input {
     border: 3px solid #6BD1FF;
     background: transparent;
-    border-radius: 10px 10px 10px 10px;
-    /* background-color: white; */
+    border-radius: 10px;
     height: 62px;
 }
 
-
-
-/*Cuadro Categoría*/
 select {
-    background-color: gray;
     width: 573px;
     height: 62px;
-    gap: 0px;
-    opacity: 0px;
 }
 
-/*Título de los elementos, excepto categoría*/
+/* --- Etiquetas --- */
 .elementoFormulario Label {
     display: block;
     background-color: darkred;
@@ -95,12 +82,12 @@ select {
     margin-left: 10px;
 }
 
+/* --- Secciones específicas --- */
 .formulario .botones {
     background-color: greenyellow;
     grid-row: 4;
     display: flex;
     justify-content: left;
-    /* Cuarta fila */
 }
 
 .formulario .titulo {
@@ -126,13 +113,11 @@ select {
     background-color: green;
 }
 
-
-
+/* --- Inputs específicos --- */
 .formulario .titulo input {
     background-color: blue;
     height: 62px;
     width: 470px;
-    justify-content: start;
 }
 
 .formulario .categoria select {
@@ -154,7 +139,22 @@ select {
 }
 
 .formulario .descripcion input {
-    background-color: red;
+    background-color: blue;
     height: 220px;
     width: 573px;
+}
+
+/* --- Placeholders --- */
+.formulario ::placeholder {
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: red;
+}
+
+.formulario .descripcion ::placeholder {
+    position: absolute;
+    bottom: 180px;
+    text-decoration: underline;
 }

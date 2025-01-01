@@ -57,7 +57,7 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
     return (
         <>
             <dialog ref={dialogRef} onClose={() => onClose()}>
-                <section className={styles.fondo}>
+                <section className={styles.contenedorPrincipal}>
                     <section className={styles.container}>
 
                         <button type="button" onClick={onClose} className={styles.closeButton}>
@@ -78,9 +78,9 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                                 valor={titulo}
                                 actualizarValor={actualizarTitulo}
                             />
-                            <div className={styles.fondoFormulario}>
+                            <div className={styles.elementoModal}>
                             <ListaOpciones
-                                className={styles.elementoModal}
+                                // className={styles.elementoModal}
                                 required
                                 valor={categoria}
                                 actualizarValor={actualizarCategoria}
@@ -106,18 +106,16 @@ function ModalZoom({ opcionesDeCategoria, visible, onClose, onCrear, registrarNu
                                 actualizarValor={actualizarVideo}
                             />
 
-                            <div className={styles.fondoFormulario}>
-                                <CajaDescriptiva
-                                    className={styles.elementoModal}
-                                    titulo="Descripción"
-                                    placeholder="¿De qué se trata este vídeo?"
-                                    required
-                                    valor={descripcion}
-                                    actualizarValor={actualizarDescripcion}
-                                />
-                                                            <Botones className={styles.fondoBotones} onCrear={manejarEnvio} onLimpiar={resetForm} />
+                            <CajaDescriptiva
+                                className={styles.elementoModal}
+                                titulo="Descripción"
+                                placeholder="¿De qué se trata este vídeo?"
+                                required
+                                valor={descripcion}
+                                actualizarValor={actualizarDescripcion}
+                            />
+                            <Botones className={styles.fondoBotones} onCrear={manejarEnvio} onLimpiar={resetForm} />
 
-                            </div>
 
 
 
